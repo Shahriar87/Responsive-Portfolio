@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../images/squared_metal.png);
+    background-image: url(../images/background-canvas.jpg);
     /* border-color: #dddddd; */
     color:#777777;
     font-size: 15px;
@@ -227,7 +227,7 @@ input, select, textarea{
     nav{
         width: 55%;
         text-align: center;
-        margin:0;
+        /* margin:0; */
     }
 
 }
@@ -238,7 +238,7 @@ input, select, textarea{
 
     .content{
     
-        width:100%;
+        width:auto;
         
     }
 
@@ -252,7 +252,7 @@ input, select, textarea{
         position: static;
         /*Adding "nav" height to the previous "header" height*/
         height: 123px;
-        width:100%; 
+        /* width:auto;  */
         padding:0;
         
         
@@ -260,7 +260,7 @@ input, select, textarea{
     }
 
     .HeaderDiv{
-        width: 100%;
+        width: auto;
         position: static;
         padding:0;
         
@@ -269,11 +269,12 @@ input, select, textarea{
 
     .header1{
         
-        width: 100%;
+        width: 89%;
         text-align: center;
         display: block;
         clear: both;
-        margin:0;
+        margin:auto;
+        float: none;
     }
 
     nav{
@@ -282,9 +283,10 @@ input, select, textarea{
         clear: both;
         text-align: center;
         padding: 20px;
-        display: block;
-        width: 100%;
-        
+        width: auto; 
+        float:none;
+        margin:auto;
+               
     }
 
 }
