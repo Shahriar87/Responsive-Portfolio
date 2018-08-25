@@ -51,21 +51,21 @@ header {
     background: #4aaaa5;
     color: white;
     padding: 20px;
-    float: left;
     width: auto;
     margin-top: 0;
     margin-bottom: 0;
     margin-left:-20px;
     position: relative;
+    float: left;
 }
 
-nav{
-    float: right; 
+nav{ 
     padding: 20px;
     width: 670px;
     text-align: right;
     margin-right:-40px;
     position: relative;  
+    float: right;
 }
 
 .header2 {
@@ -138,9 +138,7 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 300px;
     text-align: center;
-    /* margin: 0,40px; */
-    /* align-items: center; */
-    /* transform: translate(-50%, -50%); */
+
 }
 
 .PortImg{
@@ -172,13 +170,17 @@ a:hover, #submit:hover{
 input, select, textarea{
     color: #777777;
     font-family: Arial, Helvetica, sans-serif;
+    width: 950px;
+}
+
+#submit{
+    width: auto;
 }
 
 @media only screen and (max-width: 980px) {
 
-    .content{
-        
-        width:544px;
+    .content{  
+        width:auto;
     }
 
     #MyPic{
@@ -186,16 +188,13 @@ input, select, textarea{
         height: auto;
     }
 
-
 }
-
 
 
 @media only screen and (max-width: 768px) {
 
     .content{
-        width:100%;
-        
+        width:auto;    
     }
 
     #MyPic{
@@ -204,34 +203,44 @@ input, select, textarea{
     }
 
     header{
-        width:100%; 
+        position: static;
+        height: 123px;
         padding:0;
-        
+        width:auto;
     }
 
     .HeaderDiv{
-        width: 100%;
-        margin:0;
-        background: #ffffff;
-        
-
+        width: auto;
+        position: static;
+        padding:0; 
     }
 
-    .header1{
-        width: 30%;
+    .header1{ 
+        clear: both;
+        width: 100%;
         text-align: center;
-        margin:0;
-        
+        display: block;
+        clear: both;
+        margin:auto;
     }
 
     nav{
-        width: 55%;
-        text-align: center;
-        /* margin:0; */
+        clear: both;
+        float:none;                         /*     This is not removing the float: left from original CSS. Can you advise why?   */
+        background: #ffffff;
+        text-align: left;
+        padding: 20px;
+        width: 100%; 
+        margin:auto; 
+        margin-left: 20px;  
+    }
+
+   
+    input, select, textarea {
+        width:546px;
     }
 
 }
-
 
 
 @media only screen and (max-width: 640px) {
@@ -248,22 +257,24 @@ input, select, textarea{
 
     }
 
+    .PortImg, .label{
+        width: 100%;
+    }
+
+    
     header{
         position: static;
-        /*Adding "nav" height to the previous "header" height*/
         height: 123px;
-        /* width:auto;  */
+        width:auto; 
         padding:0;
         
-        
-
+    
     }
 
     .HeaderDiv{
         width: auto;
         position: static;
         padding:0;
-        
         
     }
 
@@ -278,15 +289,20 @@ input, select, textarea{
     }
 
     nav{
-          
+
         background: #ffffff;
         clear: both;
         text-align: center;
         padding: 20px;
-        width: auto; 
+        width: auto;
         float:none;
         margin:auto;
-               
     }
+
+    input, select, textarea {
+        width:100%;
+    }
+
+ 
 
 }
